@@ -46,10 +46,10 @@ public class FirstAndLastPositionBinary_Q4 {
 			   else {
 				   ans = mid;
 				   if(firstTime) {
-					   end = mid -1;
+					   end = mid -1;   // checks if any other target left to the current obtained target
 				   }
 				   else {
-					   start = mid +1;
+					   start = mid +1;    // checks if any other target right to the current obtained targer
 				   }
 			   }
 		   }
