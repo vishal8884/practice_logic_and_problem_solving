@@ -8,9 +8,9 @@ public class SmallestLetterGreaterThanTarget_Q3 {
 
 	public static void main(String[] args) {
 
-		//char[] letters = {'e','e','e','k','q','q','q','v','v','y'};
-		char[] letters = {'c','f','j'};
-		char res = nextGreatestLetter(letters, 'c');
+		char[] letters = {'e','e','e','k','q','q','q','v','v','y'};
+		//char[] letters = {'c','f','j'};
+		char res = nextGreatestLetter(letters, 'v');
 		
 		System.out.println("res :: "+res);
 
@@ -30,7 +30,7 @@ public class SmallestLetterGreaterThanTarget_Q3 {
 				end = mid - 1;
 			}
 			else {  
-				start = mid + 1;
+				start = mid + 1;  // added this in else part as we need to remove start elements to find larger ones
 			}
 
 		}

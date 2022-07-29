@@ -23,13 +23,15 @@ public class NearestNuberToTarget_Ceiling_Q1 {
 			   int mid = start + (end - start)/2;
 			   System.out.println("start :: "+start+"     end :: "+end+"      mid :: "+mid+"     mid val :: "+arr[mid]);
 			   
-			   if(target == arr[mid])
-				   return mid;
+			   
 			   if(target < arr[mid]) {
 				   end = mid -1;
 			   }
 			   else if(target > arr[mid]) {
 				   start = mid +1;
+			   }
+			   else {
+				   return mid;
 			   }
 			   
 		   }

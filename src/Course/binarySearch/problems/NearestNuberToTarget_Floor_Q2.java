@@ -5,13 +5,13 @@ public class NearestNuberToTarget_Floor_Q2 {
 	public static void main(String[] args) {
 		int[] arr = {2,3,8,13,60,77,83};
 		
-		int res = nearestGreaterBinarySearch_Floor(arr, -5);   //65
+		int res = nearestLesserBinarySearch_Floor(arr, -5);   //65
 		System.out.println("res :: "+res);
 	}
 	
 	//question --> find the target or number less than target by min
 	
-	public static int nearestGreaterBinarySearch_Floor(int[] arr, int target) {
+	public static int nearestLesserBinarySearch_Floor(int[] arr, int target) {
 		
 
 		   int start = 0;
