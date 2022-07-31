@@ -1,6 +1,6 @@
 package Course.binarySearch.problems;
 
-public class FindInMountainArray_Q6 {
+public class FindInMountainArray_Q7 {
 	
 	public static void main(String[] args) {
 		//int[] arr = {1,22,35,65,77,4,3,2,1,0};

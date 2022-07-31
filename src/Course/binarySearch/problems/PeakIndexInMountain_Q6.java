@@ -1,6 +1,6 @@
 package Course.binarySearch.problems;
 
-public class PeakIndexInMountain_Q5 {
+public class PeakIndexInMountain_Q6 {
 
 	public static void main(String[] args) {
 
