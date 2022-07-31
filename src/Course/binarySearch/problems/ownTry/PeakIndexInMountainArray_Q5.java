@@ -27,15 +27,15 @@ public class PeakIndexInMountainArray_Q5 {
 			if(mid+1 >= arr.length-1) {                                  //4) if the mid exceeds arr length then we return result
 				return max;
 			}
-			if((mid+1 < arr.length-1) && arr[mid] < arr[mid+1]) {        //1) if arr[mid] is less than its next we eliminate all left elements of mid along with mid
+			if(arr[mid] < arr[mid+1]) {        //1) if arr[mid] is less than its next we eliminate all left elements of mid along with mid
 				start = mid +1;
 			}
-			else if((mid+1 < arr.length-1) && arr[mid] > arr[mid+1]) {     //2) if arr[mid] is greater than its next we eliminate all right elements of mid along with mid
+			else if(arr[mid] > arr[mid+1]) {     //2) if arr[mid] is greater than its next we eliminate all right elements of mid along with mid
 				end = mid -1;
 			} 
 			
 		}
-		return max;
+		return max;                                                        //4) at last we return the max
     }
 
 	
