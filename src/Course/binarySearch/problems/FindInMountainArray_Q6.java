@@ -1,4 +1,4 @@
-package Course.binarySearch.problems.ownTry;
+package Course.binarySearch.problems;
 
 public class FindInMountainArray_Q6 {
 	
@@ -8,13 +8,8 @@ public class FindInMountainArray_Q6 {
 		int res = findInMountainArray(2, arr);
 		
 		System.out.println("res :: "+res);
-		
-		
 	}
 
-	
-	//OWN and video approach same 
-	
     public static int findInMountainArray(int target, int[] arr) {
     	
     	int peak = findPeak(arr);
