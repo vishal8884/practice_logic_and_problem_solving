@@ -5,13 +5,13 @@ public class PeakIndexInMountain_Q6 {
 	public static void main(String[] args) {
 
         //0,1,2,3,4 ,5 ,6 ,7 ,8,9,10,11
-		int[] arr = {0,1,2,3,12,15,20,24,8,3,1 ,0};
+		int[] arr = {0,1,2,3,12,15,20,24,8,3,1 ,0};    //len = 12
 		//int[] arr = {40,48,61,75,100,99,98,39,30,10};
 		int res = peakIndexInMountainArray(arr);
 		System.out.println("res :: "+res);
 	}
 	
-    public static int peakIndexInMountainArray(int[] arr) {          //worked in leet code own
+    public static int peakIndexInMountainArray(int[] arr) {          //worked in leet code own..not this but same O(log n)
 		
     	
     	int start =0;

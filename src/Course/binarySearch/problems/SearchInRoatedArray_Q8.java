@@ -1,4 +1,4 @@
-package Course.binarySearch.problems.ownTry;
+package Course.binarySearch.problems;
 
 public class SearchInRoatedArray_Q8 {
 
