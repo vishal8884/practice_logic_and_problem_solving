@@ -3,7 +3,8 @@ package Course.binarySearch.problems.impLogic;
 public class FindPivot {
 
 	public static void main(String[] args) {
-		int[] arr = {23,35,10,12,13,18,20};  //len=7     mid = 3       // 10, 12, 13, 18, 20, 23, 35
+		int[] arr = {23,35,10,12,13,18,20};  //len=7     mid = 3       // 10, 12, 13, 18, 20, 23, 35        
+		// int[] arr = {4,5,6,7,8,1,2}; 
 		int res =findPivotInRotatedArray(arr);
 		System.out.println("res :: "+res);
 	}
@@ -23,10 +24,10 @@ public class FindPivot {
 			if(mid > start && arr[mid] < arr[mid-1]) {
 		       return mid -1;
 			}
-			if(arr[mid] <= arr[start]) {           // start elem is greater than mid so we can eliminate mid along with its right
-				end = mid -1;
-			}
-			else {                                 // start elem is less than mid so max elem is present to its right
+			if(arr[mid] <= arr[start]) {           // mid elem is less than start....so this(cause its caught at firstif this is the one) and its right cant be the max ..ie pivot
+				end = mid -1;                      // works with arr[mid] < arrp[start] for no duplicates
+ 			}
+			else {                                 // mid elem is greater than start....so this and its left cant be the one
 				start = mid +1;
 			}
 		 }
