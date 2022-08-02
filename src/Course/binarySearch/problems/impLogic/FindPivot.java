@@ -24,7 +24,7 @@ public class FindPivot {
 			if(mid > start && arr[mid] < arr[mid-1]) {
 		       return mid -1;
 			}
-			if(arr[mid] <= arr[start]) {           // mid elem is less than start....so this(cause its caught at firstif this is the one) and its right cant be the max ..ie pivot
+			if(arr[mid] <= arr[start]) {           // mid elem is less than start....so this(cause its caught at first if this is the one) and its right cant be the max ..ie pivot
 				end = mid -1;                      // works with arr[mid] < arrp[start] for no duplicates
  			}
 			else {                                 // mid elem is greater than start....so this and its left cant be the one

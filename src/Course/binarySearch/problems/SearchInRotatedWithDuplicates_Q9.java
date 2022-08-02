@@ -1,4 +1,4 @@
-package Course.binarySearch.problems.ownTry;
+package Course.binarySearch.problems;
 
 public class SearchInRotatedWithDuplicates_Q9 {
 
@@ -25,12 +25,12 @@ public class SearchInRotatedWithDuplicates_Q9 {
 			if(mid > start && arr[mid] < arr[mid-1]) {
 				return mid-1;
 			}
-			if(arr[start] == arr[end] && arr[mid] == arr[start]) {    // start val == end val == mid val
+			if(arr[start] == arr[end] && arr[mid] == arr[start]) {
 				
 				if(arr[start] > arr[start+1]) {
 					return start;
 				}
-				start ++;       // skipping duplicates
+				start ++;
 				if(arr[end] < arr[end-1]) {
 					return end;
 				}
