@@ -7,7 +7,7 @@ public class SplitArrayLargestSum_Q11 {
 		int[] arr = {7,2,5,10,8};
 		splitArray(arr, 2);
 		//minimize the largest sum among these m subarrays.
-	}
+	}                   //did not work
 
 	public static int splitArray(int[] nums, int m) {
 
@@ -29,9 +29,9 @@ public class SplitArrayLargestSum_Q11 {
 		int res =findTargetInArray(nums, 18, 2);
 		System.out.println("res :: "+res);
 		
-		while(start<=end) {
-			int mid = start + (end-start)/2;
-		}
+//		while(start<=end) {
+//			int mid = start + (end-start)/2;
+//		}
 		
 		return -1;
 	}
@@ -52,6 +52,10 @@ public class SplitArrayLargestSum_Q11 {
 				sum=0;
 				sum = sum +arr[i];
 			}
+//			else if (sum == target) {
+//				sum=0;
+//				sum = sum +arr[i];
+//			}
 			System.out.println("sum :: "+sum+"     prevsum :: "+prevsum+"      maxSum :: "+maxSum);
 		}
 		
