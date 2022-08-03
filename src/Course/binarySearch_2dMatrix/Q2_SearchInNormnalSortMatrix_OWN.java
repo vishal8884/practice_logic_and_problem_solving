@@ -11,7 +11,7 @@ public class Q2_SearchInNormnalSortMatrix_OWN {
 				           {9,10,11,12}, // row
 				           {13,14,15,16} };
 		
-		int[] res = searchInSortedArray(matrix,12);
+		int[] res = searchInSortedArray(matrix,2);
 		System.out.println("res :: "+Arrays.toString(res));
 	}                                                                      // solved by own....
 	
@@ -46,6 +46,12 @@ public class Q2_SearchInNormnalSortMatrix_OWN {
 			}
 			
 			if(prevstart == prevend) {           //using prevstart and prevend as curent start and ned gets modified in current loop
+				rowStart ++;
+				columnStart=0;
+				columnEnd =matrix.length-1;
+			}
+			
+			else if(matrix[rowStart][columnEnd] > target) {      // as [rowStart][columnEnd] is the greatest in the current row .... so if target is less than that it cant be inside
 				rowStart ++;
 				columnStart=0;
 				columnEnd =matrix.length-1;
