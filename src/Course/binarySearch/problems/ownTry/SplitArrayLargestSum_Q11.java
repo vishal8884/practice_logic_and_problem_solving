@@ -11,8 +11,8 @@ public class SplitArrayLargestSum_Q11 {
 
 	public static int splitArray(int[] nums, int m) {
 
-		int potentialMinAnswer = getPotentialMinAnswer(nums);  //when m=1...which is min possible                            //val = 10
-		int potentialMaxAnswer = getPotentialMaxAnswer(nums);   //when m = arr.length ...which is max possible value of m    //val = 32
+		int potentialMinAnswer = getPotentialMinAnswer(nums);  
+		int potentialMaxAnswer = getPotentialMaxAnswer(nums); 
 		
 		//answer can lie between 10 and 32...ie potentialMinAnswer and potentialMaxAnswer
 		//10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32     //len 23    mid= 22/2 = 11     arr[mid] = arr[11] = 21

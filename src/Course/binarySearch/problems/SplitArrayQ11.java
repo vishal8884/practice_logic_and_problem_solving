@@ -12,8 +12,8 @@ public class SplitArrayQ11 {
 	
 	public static int splitArray(int[] nums,int m) {
 		
-		int start =0;
-		int end =0;
+		int start =0;          //m=1
+		int end =0;            // m= arr.length =5
 		
 		for(int i=0;i<nums.length;i++) {
 			start = Math.max(start, nums[i]); //in the end start will have max val
@@ -21,7 +21,8 @@ public class SplitArrayQ11 {
 		}
 
 		// min m val  m = 1                  partition = (7,2,5,10,8)          so largest sum in partition is sum(arr) = 32   which is min among the partition
-		// max m val  m = arr.length = 5     partition (7) (2) (5) (10) (8)    so max sum of the partition is 10      ...which is the only possible one
+		// max m val  m = arr.length = 5     partition (7) (2) (5) (10) (8)    so max sum of the partition is 10      ...which is the only possible sum  
+		//                                                                       as it cannot be partitioned other than this way
 		
 		//binary search the ans between 10 and 32
 		while(start<end) {
@@ -31,7 +32,6 @@ public class SplitArrayQ11 {
 			//calculate how many pieces you can divide this in with max sum
 			//7,2,5,10,8
 			//10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32     //len 23    mid= 22/2 = 11     arr[mid] = arr[11] = 21
-			// lesser the number more the pieces...follow that logic
 			int sum=0;
 			int pieces = 1;
 			
@@ -47,7 +47,7 @@ public class SplitArrayQ11 {
 				}
 			}
 			System.out.println();
-			
+			                                 // lesser the number more the pieces...follow that logic
 			if(pieces > m) {                 // pieces greater than m....so we can ignore mid and left elements
 				start = mid +1;               // assume mid =12 then there will be 4 pieces (7,2) (5) (10) (8)   ...so obviosuly mid should we greater than current mid
 			}
@@ -57,7 +57,7 @@ public class SplitArrayQ11 {
 			
 		}
 		
-		return start;
+		return start;   // we return start/end (same) because at end of binary search with conditions....cannot go right or left ..so thats the answer
 	}
 
 }
