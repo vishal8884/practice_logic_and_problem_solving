@@ -56,8 +56,10 @@ public class SplitArrayQ11 {
 			}
 			
 		}
-		
+		 
 		return start;   // we return start/end (same) because at end of binary search with conditions....cannot go right or left ..so thats the answer
+		
+		                // we can also do while(start<=end) and at last if(start==end) return start;
 	}
 
 }
