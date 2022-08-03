@@ -2,7 +2,7 @@ package Course.binarySearch_2dMatrix;
 
 import java.util.Arrays;
 
-public class Q1_SearchIn2dMatrix {
+public class Q1_SearchIn2dMatrixStrictltSorted {
 
 	public static void main(String[] args) {
 
