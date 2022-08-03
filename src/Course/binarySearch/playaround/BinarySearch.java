@@ -4,8 +4,8 @@ public class BinarySearch {
 
 	public static void main(String[] args) {
 
-		int arr[] = {1,5,2};
-		int pos = performBinarySearch(arr,2);
+		int arr[] = {1,2,3,4,5,6,7,8};
+		int pos = performBinarySearch(arr,-7);
 		
 		System.out.println("pos :: "+pos);
 	}
@@ -15,7 +15,10 @@ public class BinarySearch {
 	   int start = 0;
 	   int end = arr.length-1;
 	   
+	   int c=0;
+	   
 	   while(start <= end) {
+		   c++;
 		   int mid = start + (end - start)/2;
 		   System.out.println("start :: "+start+"     mid :: "+mid+"     end :: "+end+"    midval :: "+arr[mid]);
 		   
@@ -30,7 +33,7 @@ public class BinarySearch {
 			   return mid;
 		   }
 	   }
-	   
+	   System.out.println("c :: "+c);
 	   return -1;
 	}
 
