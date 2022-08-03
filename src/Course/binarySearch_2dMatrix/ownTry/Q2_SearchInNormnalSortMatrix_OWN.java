@@ -1,4 +1,4 @@
-package Course.binarySearch_2dMatrix;
+package Course.binarySearch_2dMatrix.ownTry;
 
 import java.util.Arrays;
 
