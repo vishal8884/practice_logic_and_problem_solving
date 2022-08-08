@@ -27,7 +27,7 @@ public class Q2_SearchInNormnalSortMatrix_OWN {
 		
 		
 		//1, 2, 3, 4
-		while(rowStart <= rowEnd) {
+		while(rowStart <= rowEnd) {         
 			int prevstart = columnStart;
 			int prevend = columnEnd;
 			

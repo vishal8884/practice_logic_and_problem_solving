@@ -10,7 +10,7 @@ public class Q8_SearchInsertPosition {
 	}
 	
 	
-	public static int searchInsert(int[] arr, int target) {              // naive approach linear search
+	public static int searchInsert(int[] arr, int target) {              //binary approach
 
 		int start = 0;
 		int end = arr.length -1;
