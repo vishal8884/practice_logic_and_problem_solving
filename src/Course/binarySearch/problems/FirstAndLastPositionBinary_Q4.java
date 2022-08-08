@@ -27,7 +27,7 @@ public class FirstAndLastPositionBinary_Q4 {
 		return res;
 	}
 	
-	public static int performBinarySearch(int[] arr, int target, boolean firstTime) {
+	public static int performBinarySearch(int[] arr, int target, boolean firstTime) { // firsttime = true if we want to find first occurance (left most)
 
 		   int ans = -1;
 		   int start = 0;

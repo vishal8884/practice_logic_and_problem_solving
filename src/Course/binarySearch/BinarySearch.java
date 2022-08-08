@@ -5,7 +5,8 @@ public class BinarySearch {
 	public static void main(String[] args) {
 
 		int arr[] = {2,5};
-		int pos = performBinarySearch(arr,5);
+		int arr2[] = {2,5,7,13,15,22};
+		int pos = performBinarySearch(arr2,14);
 		
 		System.out.println("pos :: "+pos);
 	}
@@ -21,7 +22,7 @@ public class BinarySearch {
 		   
 		   if(target < arr[mid]) {
 			   end = mid -1;
-		   }
+		   }                                   //which ever condition satifies at last...start/end points to that 
 		   else if(target > arr[mid]) {
 			   start = mid +1;
 
@@ -30,7 +31,7 @@ public class BinarySearch {
 			   return mid;
 		   }
 	   }
-	   
+	   System.out.println("start :: "+start+"      end :: "+end);
 	   return -1;
 	}
 
