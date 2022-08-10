@@ -115,7 +115,7 @@ public class Q7_KthMissingPositiveNumber {
 	//////////////////////// Linear approach //////////////////////////////////////////////////////////////
 	
 	
-    public static int findKthPositiveLinear(int[] arr, int k) {           //linear naive approach O(n)      ..own working 0ms
+    public static int findKthPositiveLinear(int[] arr, int k) {           //linear naive approach O(n)      ..own working 0ms    //2,3,4,7,11
         
     	int x=0;
     	int i=1;

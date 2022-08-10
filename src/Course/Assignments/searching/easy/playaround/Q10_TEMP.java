@@ -22,7 +22,6 @@ public class Q10_TEMP {
 		
 		int start = 0;
 		int end = arr.length - 1;
-		int c = 0;
 		
 		while(start <= end) {
 			

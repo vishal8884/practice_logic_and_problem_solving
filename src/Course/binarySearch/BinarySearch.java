@@ -23,7 +23,7 @@ public class BinarySearch {
 		   if(target < arr[mid]) {
 			   end = mid -1;
 		   }                                   //which ever condition satifies at last...start/end points to that 
-		   else if(target > arr[mid]) {
+		   else if(target > arr[mid]) {        // here its target > arr[mid] ..so elseif is that
 			   start = mid +1;
 
 		   }
