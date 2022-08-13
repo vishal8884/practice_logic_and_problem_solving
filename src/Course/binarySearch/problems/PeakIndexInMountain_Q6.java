@@ -29,6 +29,8 @@ public class PeakIndexInMountain_Q6 {
     		}
     	}
     	
+    	System.out.println("start :: "+start+"     end :: "+end);
+    	
 		return start;       //start and end will be equal as while(start<end)
     }
 
