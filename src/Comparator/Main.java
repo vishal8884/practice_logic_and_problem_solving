@@ -47,6 +47,11 @@ public class Main {
 			return a.compareTo(b);
 		});
 		
+		//method 2 simplified///////////////////////////////////////////////
+		Comparator<Employee> employeeComparator3 = Comparator.comparing(Employee :: getSalary,(a,b) -> {
+			return a.compareTo(b);
+		});
+		
 		Collections.sort(employeeList,employeeComparator2);
 		
 		System.out.println();
