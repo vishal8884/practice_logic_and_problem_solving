@@ -68,7 +68,7 @@ public class Q11_MinAbsSumDiff {
 			   findAbsDiffSum_andStoreInArr(i_val, len, nums1, nums2, maxAbsDiff);
 			   nearestNum = findNearestNumber(nums1,nums2[maxAbsDiff[1]]);
 			
-			   System.out.println("sum2 :: "+sum+"      maxAbsDiff :: "+Arrays.toString(maxAbsDiff)+"     nearestNum :: "+nearestNum+"     ival :: "+i_val); System.out.println();
+			   System.out.println("maxAbsDiff :: "+maxAbsDiff[0]+"     maxAbsDiffPos :: "+maxAbsDiff[1]+"     nearestNum :: "+nearestNum+"       sum :: "+sum+"    counter :: "+counter);
 			   
 			   if(nearestNum != nums1[maxAbsDiff[1]]) {
 				    return getRes(sum, maxAbsDiff, nums1, nums2, nearestNum, mod);
@@ -100,7 +100,7 @@ public class Q11_MinAbsSumDiff {
 		for(int i=i_val;i<len;i++) {
 	           int absDiff = Math.abs(nums1[i]-nums2[i]); 
 	           
-	           System.out.println("i_val :: "+i_val+"  i :: "+i+"     absDiff :: "+absDiff);
+	         //  System.out.println("i_val :: "+i_val+"  i :: "+i+"     absDiff :: "+absDiff);
 	           
 	           sum = sum + absDiff;
 	           if(absDiff >= maxAbsDiff[0]) {
