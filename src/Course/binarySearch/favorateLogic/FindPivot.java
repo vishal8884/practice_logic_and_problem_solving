@@ -1,4 +1,4 @@
-package Course.binarySearch.problems.impLogic;
+package Course.binarySearch.favorateLogic;
 
 public class FindPivot {
 

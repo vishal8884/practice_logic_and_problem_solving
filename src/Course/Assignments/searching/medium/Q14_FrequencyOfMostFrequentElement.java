@@ -25,7 +25,7 @@ public class Q14_FrequencyOfMostFrequentElement {
 	            
 	            while (sum + k < (long)A[j] * (j - i + 1)) {
 	                sum -= A[i];
-	                i += 1;
+	                i++;
 	            }
 	            res = Math.max(res, j - i + 1);
 	        }
