@@ -1,6 +1,7 @@
 package Course.Assignments.searching.easy;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Q7_KthMissingPositiveNumber {
@@ -23,6 +24,8 @@ public class Q7_KthMissingPositiveNumber {
 	// so ans next to 14 by k - elem missed(7)  ....ie 14 + (k-elemmissed)  =  14 + (8-7) = 14 +1 =15
     public static int findKthPositive(int[] arr, int k) {           //binary approach   //eg for arr2={2,3,5,9,10,11,14,29,33}   k=8
         
+    	System.out.println("arr :: "+Arrays.toString(arr));
+    	
     	int start =0;
     	int end = arr.length -1;
     	
@@ -56,7 +59,7 @@ public class Q7_KthMissingPositiveNumber {
     	                                               // so ans should be next to it by k  ( already missed_count_at_end done so
     	                                               // remaining.... k - missed_count_at_end = 8 - 7 = 1 ....therefor ans = arr[end] + 1
     	k = k- missed_count_at_end;
-    	System.out.println("end :: "+end+"      missed_count_at_end :: "+missed_count_at_end+"    k :: "+k);
+    	System.out.println("start :: "+start+"     end :: "+end+"       arr[end] :: "+arr[end]+"      missed_count_at_end :: "+missed_count_at_end+"    k :: "+k);
     	
 	    return arr[end]+k;
     }
@@ -118,12 +121,10 @@ public class Q7_KthMissingPositiveNumber {
     public static int findKthPositiveLinear(int[] arr, int k) {           //linear naive approach O(n)      ..own working 0ms    //2,3,4,7,11
         
     	int x=0;
-    	int i=1;
+    	int i=1; // i will be the elements in order like................. 1,2,3,4,5,6,7,8,9,10,11,12.....i is just used to compare if equal with arr[x] ...so will increase in all cases
     	int counter =1;
     	
     	while(true) {
-    		
-    		
     		if(arr[x] != i) {                                   // case 1 : number not present
     			if(counter == k) {
     				return i;

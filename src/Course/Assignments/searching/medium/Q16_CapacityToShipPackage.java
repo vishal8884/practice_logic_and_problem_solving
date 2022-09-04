@@ -2,6 +2,9 @@ package Course.Assignments.searching.medium;
 
 import java.util.Arrays;
 //https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/discuss/256729/JavaC%2B%2BPython-Binary-Search
+
+//question similar is split array in package Course.binarySearch.problems.splitArray
+
 public class Q16_CapacityToShipPackage {
 
 	public static void main(String[] args) {

@@ -4,8 +4,8 @@ public class SearchInRoatedArray_Q8 {
 
 	public static void main(String[] args) {
                    //s                    m                        e
-		//int[] arr = {29,31,34,36,38,39,41,45,51,11,12,13,14,15,23,26};    // from 51 again asscending
-		int[] arr = {3,5,1};
+		int[] arr = {29,31,34,36,38,39,41,45,51,11,12,13,14,15,23,26};    // from 51 again asscending
+		int[] arr2 = {3,5,1};
 		//int res = findPivot(arr);
 		int res = search(arr, 3);
 		System.out.println("res :: "+res);
@@ -47,6 +47,10 @@ public class SearchInRoatedArray_Q8 {
     	
     	return -1;
     }
+    
+    
+    //           //s                    m                        e
+//	int[] arr = {29,31,34,36,38,39,41,45,51,11,12,13,14,15,23,26};    // from 51 again asscending
     
    public static int findPivot(int[] arr) {
 	  

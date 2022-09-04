@@ -5,7 +5,7 @@ public class NearestNuberToTarget_Ceiling_Q1 {
 	public static void main(String[] args) {
 		int[] arr = {2,3,8,13,60,77,83};
 		
-		int res = nearestGreaterBinarySearch_Ceiling(arr, 60);   //65
+		int res = nearestGreaterBinarySearch_Ceiling(arr, 14);   //65
 		System.out.println("res :: "+res);
 	}
 	//question --> find the target or number greater than target by min

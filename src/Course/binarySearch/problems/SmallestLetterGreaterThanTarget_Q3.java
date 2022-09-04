@@ -30,7 +30,7 @@ public class SmallestLetterGreaterThanTarget_Q3 {
 				end = mid - 1;
 			}
 			else {  
-				start = mid + 1;  // added this in else part as we need to remove start elements to find larger ones
+				start = mid + 1;   //target >= letters[mid]
 			}
 
 		}
