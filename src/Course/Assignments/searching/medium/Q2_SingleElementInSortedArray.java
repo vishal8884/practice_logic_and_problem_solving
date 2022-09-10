@@ -1,5 +1,7 @@
 package Course.Assignments.searching.medium;
 
+import java.util.Arrays;
+
 public class Q2_SingleElementInSortedArray {
 
 	public static void main(String[] args) {
@@ -16,7 +18,8 @@ public class Q2_SingleElementInSortedArray {
 	//if last no we move to first and check if even or odd
 	//if even....order looks fine in left...so start = mid +1;
 	//if odd ....order is incorrect so sol is present left...so elemitae first half...end = mid -1;
-	public static int singleNonDuplicate(int[] nums) {             //binary enhanced approach try //tbc  //
+	public static int singleNonDuplicate(int[] nums) {             //binary enhanced approach try //tbc  //1,1,2,3,3,4,4,8,8
+		System.out.println("nums :: "+Arrays.toString(nums));
 		
 		int len = nums.length;
 		

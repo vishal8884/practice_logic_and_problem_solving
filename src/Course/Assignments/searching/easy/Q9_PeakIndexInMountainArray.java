@@ -22,7 +22,7 @@ public class Q9_PeakIndexInMountainArray {
 			System.out.println("start :: "+start+"     mid :: "+mid+"       end :: "+end+"      midval :: "+arr[mid]);
 			
 			if(arr[mid] > arr[mid+1]) {
-				end = mid;
+				end = mid;            //this might be possible ans so not doing end = mid -1;
 			}
 			else {
 				start = mid +1;

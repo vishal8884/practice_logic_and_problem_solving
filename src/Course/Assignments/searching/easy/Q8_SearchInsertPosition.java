@@ -18,7 +18,7 @@ public class Q8_SearchInsertPosition {
 		while(start<=end) {
 			
 			int mid = start + (end -start)/2;
-			System.out.println("start :: "+start+"     mid :: "+mid+"     end :: "+end);
+			System.out.println("start :: "+start+"     mid :: "+mid+"     end :: "+end+"      midval :: "+arr[mid]);
 			
 			if(target == arr[mid]) {
 				return mid;

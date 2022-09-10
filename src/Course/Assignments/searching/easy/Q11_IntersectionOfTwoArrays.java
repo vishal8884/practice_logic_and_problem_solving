@@ -24,8 +24,8 @@ public class Q11_IntersectionOfTwoArrays {
 	
 	public static int[] intersection(int[] nums1, int[] nums2) {         //binary approach
 
-		Arrays.sort(nums1);
-		Arrays.sort(nums2);
+		Arrays.sort(nums1);  //4,9,5
+		Arrays.sort(nums2); //9,4,9,8,4
 		
 		Set<Integer> set = new HashSet<>();
 		

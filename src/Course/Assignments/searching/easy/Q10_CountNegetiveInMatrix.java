@@ -31,18 +31,18 @@ public class Q10_CountNegetiveInMatrix {
 		
 		for(int row=0; row<rows; row++) {
 			
-			if(grid[row][0] < 0) {
+			if(grid[row][0] < 0) {   //if first col < 0 then other all will be less than 0...so add all cols
 				c = c + cols; 
 				continue;
 			}
-			if(grid[row][colend] >= 0) {
+			if(grid[row][colend] >= 0) {   //if first col > 0 then all cols will be greater
 				continue;
 			}
 			
 			int start = colstart;                          
 			int end = colend;
 			
-			while(start < end) {           //4,3,2,-1   //1,1,-1,-2     // 1,-1,-2    //2,3,-1,-5,-6,-10,-20 (this)
+			while(start < end) {           //4,3,2,-1   //1,1,-1,-2     // 1,-1,-2    //2,3,-1,-5,-6,-10,-20 (this)       // it does not find target as start < end
 				                                                            //at last arr[start] = -1 and arr[end] = 3 in this array as -1 as first neg and 
 				                                                            //3 is first pos....adn start is increasing and mid is decreasing
 				

@@ -5,7 +5,7 @@ public class FindNearestNumber {
 	public static void main(String[] args) {
 
 		int[] arr = {1,28,21};
-		int res = findNearestNumber(arr, 9);
+		int res = findNearestNumber(arr, 26);
 		
 		System.out.println("res :: "+res);
 	}
