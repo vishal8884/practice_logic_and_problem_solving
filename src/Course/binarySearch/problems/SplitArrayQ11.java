@@ -49,7 +49,7 @@ public class SplitArrayQ11 {
 			System.out.println();
 			                                 // lesser the number more the pieces...follow that logic
 			if(pieces > m) {                 // pieces greater than m....so we can ignore mid and left elements
-				start = mid +1;               // assume mid =12 then there will be 4 pieces (7,2) (5) (10) (8)   ...so obviosuly mid should we greater than current mid
+				start = mid +1;             // assume mid =12 then there will be 4 pieces (7,2) (5) (10) (8)   ...so obviosuly mid should we greater than current mid
 			}
 			else {                 //pieces <= m ... pieces are m or greater means answer and be lesser than or equal to middle...so the right side can be ignored
 				end = mid;         // assume mid = 21 then there will be so there will be 2 pieces  (7,2,5) (10,8)  .. so answer can be this or less than this
