@@ -19,16 +19,17 @@ public class BubbleSort {
     	
     	boolean swapped;
     	
-    	for(int i=0;i<arr.length;i++) {    //i is just used as wall in below loop so that it can avoid already sorted part
+    	for(int i=0;i<arr.length;i++) {
     		swapped = false;
-    		for(int j=1;j<arr.length-i;j++) {   //arr.length - i because of wall
-    			if(arr[j-1]>arr[j]) {
+    		for(int j=1;j<arr.length-i;j++) {
+    			if(arr[j-1] > arr[j]) {
     				int temp = arr[j];
     				arr[j] = arr[j-1];
     				arr[j-1] = temp;
-    				swapped=true;
+    				swapped = true;
     			}
     		}
+    		
     		if(!swapped) {
     			return;
     		}
@@ -37,15 +38,17 @@ public class BubbleSort {
 	}
     
     /*
+     * in each step greatest num is put into its place ie from last
+     * 
      * | is wall and the part next to it is ignored as its already sorted
      * 
-     * i=0          j < arr.length - i      j < 5 - 0 = 5    4,2,5,3,1|
+     * i=0          j < arr.length - i      j < 5 - 0 = 5      j < 5    4,2,5,3,1|
      * 
-     * i=1          j < arr.length - i      j < 5 - 1 = 4    2,4,3,1,|5
+     * i=1          j < arr.length - i      j < 5 - 1 = 4      j < 5    2,4,3,1,|5
      * 
-     * i=2          j < arr.length - i      j < 5 - 2 = 3    2,3,1,|4,5
+     * i=2          j < arr.length - i      j < 5 - 2 = 3      j < 5    2,3,1,|4,5
      * 
-     * i=3          j < arr.length - i      j < 5 - 3 = 2    2,1,|3,1,5
+     * i=3          j < arr.length - i      j < 5 - 3 = 2      j < 5    2,1,|3,1,5
      */
 	
 	public static void bubbleSortSlow(int[] arr) {
