@@ -3,6 +3,12 @@ package Course.sorting;
 import java.util.Arrays;
 
 public class SelectionSortOwn {
+	
+	//notes 
+	
+	//step 1) take max elem with len= n-1 and swap with its correct pos
+	
+	//step 2) take max elem with len = n-2 and swapwith its pos...so on
 
 	public static void main(String[] args) {
 
