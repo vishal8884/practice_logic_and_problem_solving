@@ -20,10 +20,7 @@ public class Q1_MissingNumber {
 			int correct = nums[i];
 			System.out.println("i :: "+i+"    nums[i] :: "+nums[i]+"    correct :: "+correct+"     nums :: "+Arrays.toString(nums));
 
-			if(nums[i] >= nums.length) {
-				
-			}
-			if((nums[i] < nums.length) && (nums[i] != nums[correct])) {
+			if((nums[i] != nums.length) && (nums[i] != nums[correct])) {
 				swap(nums,i,correct);
 			}
 			else {
@@ -37,7 +34,7 @@ public class Q1_MissingNumber {
 			}
 		}
 		
-		return -1;
+		return nums.length;
 	}
 	
 	public static void swap(int[] arr, int first, int second) {
