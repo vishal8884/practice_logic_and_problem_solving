@@ -6,7 +6,7 @@ public class BinarySearch {
 
 		int arr[] = {2,5};
 		int arr2[] = {2,5,7,13,15,22};
-		int pos = performBinarySearch(arr2,13);
+		int pos = performBinarySearch(arr2,5);
 		
 		System.out.println("pos :: "+pos);
 	}
