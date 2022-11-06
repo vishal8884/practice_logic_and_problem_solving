@@ -5,7 +5,7 @@ public class NearestNuberToTarget_Floor_Q2 {
 	public static void main(String[] args) {
 		int[] arr = {2,3,8,13,60,77,83};
 		
-		int res = nearestLesserBinarySearch_Floor(arr, -5);   //65
+		int res = nearestLesserBinarySearch_Floor(arr, 62);   //65
 		System.out.println("res :: "+res);
 	}
 	

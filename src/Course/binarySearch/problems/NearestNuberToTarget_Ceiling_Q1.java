@@ -24,7 +24,7 @@ public class NearestNuberToTarget_Ceiling_Q1 {
 			   System.out.println("start :: "+start+"     end :: "+end+"      mid :: "+mid+"     mid val :: "+arr[mid]);
 			   
 			   
-			   if(target < arr[mid]) {
+			   if(target < arr[mid]) {             //when start == end in this loop we need to check if this if loop is called or next one
 				   end = mid -1;
 			   }
 			   else if(target > arr[mid]) {

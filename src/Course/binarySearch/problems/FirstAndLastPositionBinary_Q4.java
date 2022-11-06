@@ -17,12 +17,12 @@ public class FirstAndLastPositionBinary_Q4 {
 	public static int[] searchRangeBinary(int[] nums, int target) {
 		int[] res = {-1,-1};
 	
-		int start = performBinarySearch(nums, target, true);
+		int firstOccur = performBinarySearch(nums, target, true);
 		System.out.println();
-		int end = performBinarySearch(nums, target, false);
+		int lastOccur = performBinarySearch(nums, target, false);
 		
-		res[0] = start;
-		res[1] = end;
+		res[0] = firstOccur;
+		res[1] = lastOccur;
 		
 		return res;
 	}
