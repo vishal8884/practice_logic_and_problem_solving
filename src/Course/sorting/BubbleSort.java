@@ -10,7 +10,7 @@ public class BubbleSort {
 		int[] arr2 = {5,4,3,2,1};
 		
 		System.out.println("arr before sort :: "+Arrays.toString(arr));
-		bubbleSort(arr);
+		bubbleSortSlow(arr);
 		System.out.println("arr after sort :: "+Arrays.toString(arr));
 	}
 	
@@ -50,7 +50,7 @@ public class BubbleSort {
      * i=3          j < arr.length - i      j < 5 - 3 = 2      j < 5    2,1,|3,1,5
      */
 	
-	public static void bubbleSortSlow(int[] arr) {
+	public static void bubbleSortSlow(int[] arr) {    //4,2,5,3,1
 		
 		for(int i=0;i<arr.length;i++) {
 			for(int j=i+1;j<arr.length;j++) {

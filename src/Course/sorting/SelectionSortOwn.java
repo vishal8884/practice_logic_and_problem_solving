@@ -38,17 +38,25 @@ public class SelectionSortOwn {
 	
 	
 	public static int[] findMaxinArr(int[] arr,int len) {
-		int max = Integer.MIN_VALUE;
+		int maxval = Integer.MIN_VALUE;
 		int maxi = -1;
 		
 		for(int i=0;i<=len;i++) {
-			if(arr[i] > max) {
-				max = arr[i];
+			if(arr[i] > maxval) {
+				maxval = arr[i];
 				maxi = i;
 			}
 		}
 		
-		return new int[] {maxi,max};
+		return new int[] {maxi,maxval};
 	}
 
 }
+
+
+// take the max and swat it with last elem       | is wall
+/*    4 2 5 3 1|
+      4 2 1 3|5
+      3 2 1|4 5
+      1 2|3 4 5 
+*/
