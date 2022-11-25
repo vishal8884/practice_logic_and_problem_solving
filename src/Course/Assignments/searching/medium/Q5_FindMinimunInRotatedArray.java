@@ -9,7 +9,7 @@ public class Q5_FindMinimunInRotatedArray {
 		int[] arr3= {4,5,6,7,0};
 		int[] arr4 = {11,13,15,17};
 		
-		int res = findMin(arr4);
+		int res = findMin(arr);
 		
 		System.out.println("res :: "+res);
 	}

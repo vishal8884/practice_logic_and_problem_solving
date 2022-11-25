@@ -25,9 +25,11 @@ public class Q2_SingleElementInSortedArray {
 		
 		if(len == 1) return nums[0];
 		
+		//edge case 1
 		if(nums[0] != nums[1]) {                //first elem check (0)
 			return nums[0];
 		}
+		//edge case 2
 		if(nums[nums.length-1] != nums[nums.length-2]) {       //last elem check (nums.length -1)
 			return nums[nums.length-1];
 		}
@@ -93,7 +95,7 @@ public class Q2_SingleElementInSortedArray {
 		return -1;
 	}
 	
-	///////////////////////////////////////Smae binary but code is good///////////////////////////////
+	///////////////////////////////////////Same binary but code is good///////////////////////////////
 	
 	public int singleNonDuplicate2(int[] nums) {  //1,1,2,3,3,4,4,8,8   .. //1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8
 		int lo = 0;

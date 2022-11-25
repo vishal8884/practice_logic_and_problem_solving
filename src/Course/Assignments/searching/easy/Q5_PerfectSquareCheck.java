@@ -4,7 +4,7 @@ public class Q5_PerfectSquareCheck {
 
 	public static void main(String[] args) {
 
-		boolean res = isPerfectSquare(808201);
+		boolean res = isPerfectSquare(16);
 		System.out.println("res :: "+res);
 	}
 

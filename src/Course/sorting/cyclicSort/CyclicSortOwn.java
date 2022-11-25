@@ -2,7 +2,7 @@ package Course.sorting.cyclicSort;
 
 import java.util.Arrays;
 
-public class CyclicSortOwn {
+public class CyclicSortOwn {// In cyclicSort all numbers will be there but not in order
 
 	public static void main(String[] args) {
 
@@ -17,7 +17,7 @@ public class CyclicSortOwn {
 		int i=0;
 		
 		while(i < arr.length) {
-			int correct = arr[i] - 1;
+			int correct = arr[i] - 1;        // eg 3 needs to be there in 2 index
 			
 			if(arr[i] != arr[correct]) {
 				swap(arr, i, correct);

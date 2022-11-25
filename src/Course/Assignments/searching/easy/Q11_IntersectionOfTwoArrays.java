@@ -29,12 +29,14 @@ public class Q11_IntersectionOfTwoArrays {
 		
 		Set<Integer> set = new HashSet<>();
 		
+		//take number one by one and binary search in second array add in SET
 		for(int num : nums1) {
 			if(binarySearch(nums2,num)) {
 			    set.add(num);
 			}
 		}
 		
+		//SET TO ARRAY convertion
 		int[] res = new int[set.size()];
 		int x =0;
 		
