@@ -9,7 +9,7 @@ public class ThirdMaximumNumber {
 		int[] nums2 = {2,2,3,1};
 		int[] nums3 = {1,1,2};
 		int[] nums5 = {1,2};
-		int[] nums4 = {3,2,1,5,4};
+		int[] nums4 = {3,2,1};
 		int res = thirdMax(nums4);
 		System.out.println("res :: "+res);
 	}

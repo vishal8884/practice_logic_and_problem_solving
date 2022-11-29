@@ -1,9 +1,6 @@
 package Course.sorting.Assignments.Easy;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class SortArrayByParity2 {
 
@@ -17,7 +14,21 @@ public class SortArrayByParity2 {
 
 	public static int[] sortArrayByParityII(int[] nums) {
 
-		return null;
+		int[] res = new int[nums.length];
+		int xEven = 0;
+		int xOdd = 1;
+		
+		for(int i=0;i<nums.length;i++) {
+			if(nums[i]%2 == 0) {
+				res[xEven] = nums[i];
+				xEven=xEven+2;
+			}
+			else {
+				res[xOdd] = nums[i];
+				xOdd = xOdd+2;
+			}
+		}
+		return res;
 	}
 
 
