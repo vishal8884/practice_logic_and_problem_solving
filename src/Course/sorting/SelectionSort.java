@@ -29,6 +29,7 @@ public class SelectionSort {
 					minIndex = j;
 				}
 			}
+			System.out.println("arr between :: "+Arrays.toString(arr));
 			swap(arr, i, minIndex);
 		}
 		

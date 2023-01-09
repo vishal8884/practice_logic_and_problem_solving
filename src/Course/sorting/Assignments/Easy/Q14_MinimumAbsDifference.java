@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class MinimumAbsDifference {
+public class Q14_MinimumAbsDifference {
 
 	public static void main(String[] args) {
 
