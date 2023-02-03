@@ -27,7 +27,7 @@ public class SelectionSort {
 			int minIndex = i;
 			for(int j=i+1;j<arr.length;j++) {
 				if(arr[j] < arr[minIndex]) {
-					minIndex = j;
+					minIndex = j;    ////at last min will be stored here in minIndex
 				}
 			}
 			System.out.println("arr between :: "+Arrays.toString(arr));

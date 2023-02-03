@@ -5,22 +5,50 @@ import java.util.Arrays;
 public class SelectionSortOwn {
 
 	public static void main(String[] args) {
-		int[] arr = {2,1,6,3,8};
-		performSelectionSort(arr);
+		int[] arr = {4,5,1,2,3};
+		performSelectionSortUsingMax(arr);
 		System.out.println("sorted arr :: "+Arrays.toString(arr));
 	}
 
-	
+    public static void performSelectionSortUsingMax(int[] arr) {
+		
+		for(int i=0;i<arr.length;i++) {
+			int maxIndex = i;
+			for(int j=i+1;j<arr.length;j++) {
+				if(arr[j] > arr[maxIndex]) {
+					maxIndex = j; //at last min will be stored here in minIndex
+				}
+			}
+			swap(arr, i, maxIndex);
+			System.out.println("arr between :: "+Arrays.toString(arr));
+		}
+	}
+
+
 	public static void performSelectionSort(int[] arr) {
+
 		
 		for(int i=0;i<arr.length;i++) {
 			int minIndex = i;
-			System.out.println("arr between :: "+Arrays.toString(arr));
 			for(int j=i+1;j<arr.length;j++) {
 				if(arr[j] < arr[minIndex]) {
-					swap(arr, minIndex, j);
+					minIndex = j; //at last min will be stored here in minIndex
 				}
 			}
+			swap(arr, i, minIndex);
+			System.out.println("arr between :: "+Arrays.toString(arr));
+		}
+	}
+	
+    public static void performSelectionSortOwnNotOptimized(int[] arr) {
+		
+		for(int i=0;i<arr.length;i++) {
+			for(int j=i+1;j<arr.length;j++) {
+				if(arr[j] < arr[i]) {
+					swap(arr, i, j);
+				}
+			}
+			System.out.println("arr between :: "+Arrays.toString(arr));
 		}
 	}
 	
