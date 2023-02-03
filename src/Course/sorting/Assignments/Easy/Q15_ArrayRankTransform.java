@@ -11,8 +11,12 @@ public class Q15_ArrayRankTransform {
 		System.out.println("res :: "+Arrays.toString(res));
 	}
 
+	//do selection sort
 	public static int[] arrayRankTransform(int[] arr) {
-
+		int max = Integer.MIN_VALUE;
+		int min = Integer.MAX_VALUE;
+		
+		
 		
 		
 		return null;

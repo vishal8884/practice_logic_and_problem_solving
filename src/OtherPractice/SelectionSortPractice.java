@@ -1,4 +1,4 @@
-package OtherPractice;
+ package OtherPractice;
 
 import java.util.Arrays;
 

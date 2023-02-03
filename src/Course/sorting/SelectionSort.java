@@ -9,6 +9,7 @@ public class SelectionSort {
 	// step 1) take max elem with len= n-1 and swap with its correct pos
 
 	// step 2) take max elem with len = n-2 and swapwith its pos...so on
+	//brings each i to its correct place either by max or min (example bring to its correct place..next 5 to its correct place)
 
 	public static void main(String[] args) {
 
