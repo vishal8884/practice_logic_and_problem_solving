@@ -1,24 +1,43 @@
 package Course.sorting.Assignments.Easy;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Q15_ArrayRankTransform {
 
 	public static void main(String[] args) {
 
 		int[] arr = {40,10,20,30};
+		int[] arr2 = {37,12,28,9,100,56,80,5,12};
 		int[] res = arrayRankTransform(arr);
 		System.out.println("res :: "+Arrays.toString(res));
 	}
 
-	//do selection sort
+	//use hash map
 	public static int[] arrayRankTransform(int[] arr) {
-		int max = Integer.MIN_VALUE;
-		int min = Integer.MAX_VALUE;
+		Map<Integer, Integer> map = new HashMap<>();
+		int x = 0;
 		
+		int[] arrCopy = Arrays.copyOf(arr,arr.length);
+		Arrays.sort(arrCopy);
 		
+		for(int i : arrCopy) {
+			map.putIfAbsent(i, map.size()+1);
+		}
+		System.out.println("map :: "+map);
 		
+		for(int i=0;i<arr.length;i++) {
+			arrCopy[x] = map.get(arr[i]);
+			x++;
+		}
 		
-		return null;
+		return arrCopy;
+	}
+	
+	private static void swap(int[] arr,int a,int b) {
+		int temp = arr[a];
+		arr[a] = arr[b];
+		arr[b] = temp;
 	}
 }
