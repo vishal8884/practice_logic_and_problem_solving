@@ -15,6 +15,9 @@ public class Q15_ArrayRankTransform {
 	}
 
 	//use hash map
+	/*
+	 * Ow nworking AssignRankToArray.class package OtherPractice;
+	 */
 	public static int[] arrayRankTransform(int[] arr) {
 		Map<Integer, Integer> map = new HashMap<>();
 		int x = 0;
@@ -22,6 +25,7 @@ public class Q15_ArrayRankTransform {
 		int[] arrCopy = Arrays.copyOf(arr,arr.length);
 		Arrays.sort(arrCopy);
 		
+		//store rank of each numbers in a map
 		for(int i : arrCopy) {
 			map.putIfAbsent(i, map.size()+1);
 		}
