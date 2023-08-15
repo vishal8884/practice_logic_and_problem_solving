@@ -7,20 +7,21 @@ public class BubbleSort {
 	public static void main(String[] args) {
   
 		int[] arr = {4,2,1,5,3};
-		bubbleSortFast(arr);
+		bubbleSortSlow(arr);
 		
 		System.out.println("arr :: "+Arrays.toString(arr));
 	}
 	
-	
+	//Both same speed
 	public static void bubbleSortFast(int[] arr) {
 		for(int i=0;i<arr.length;i++) {
 			for(int j=1;j<arr.length-i;j++) {
 				if(arr[j-1] > arr[j]) {
 					swap(arr, j, j-1);
 				}
+				System.out.println("i :: "+i+"     j :: "+j+"      arr inside:: "+Arrays.toString(arr));
 			}
-			System.out.println("arr inside:: "+Arrays.toString(arr));
+			System.out.println();
 		}
 	}
 	
@@ -30,7 +31,9 @@ public class BubbleSort {
 				if(arr[i] > arr[j]) {
 					swap(arr, i, j);
 				}
+				System.out.println("i :: "+i+"     j :: "+j+"      arr inside:: "+Arrays.toString(arr));
 			}
+			System.out.println();
 		}
 		
 	}
