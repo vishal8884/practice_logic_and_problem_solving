@@ -13,6 +13,7 @@ public class PrintWithoutLoop {
 		if(n == 0) {
 			return;
 		}
+
 		print(n-1);
 		System.out.println(n);
 	}
